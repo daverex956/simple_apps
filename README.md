@@ -3,7 +3,12 @@ This repository contains scripts for listing and running apps.
 
 ### Install Dependencies
 ```bash
-pip install Pillow ffmpeg-python
+pip install gTTS
+pip install tqdm
+pip install pdfplumber
+pip install pytesseract
+pip install pillow
+pip install ffmpeg-python
 ```
 
 ### Run
@@ -16,7 +21,10 @@ python3 run.py
 User % python3 run.py
 
 --- Choose App --- 
-1. Remove_Metadata.py
+1. PDF_Reader.py
+2. Text_to_Speach.py
+3. Remove_Metadata.py
+4. Exit
 
 Enter the number of the script you want to run: 1
 Running script: /apps/Remove_Metadata.py
