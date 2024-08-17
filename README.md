@@ -30,7 +30,8 @@ User % python3 run.py
 2. Text_to_Speach
 3. Add_Video_Outro
 4. Remove_Metadata
-5. Exit
+5. BTC_Price
+6. Exit
 
 Enter the number of the script you want to run: 1
 Running script: /apps/Remove_Metadata.py
