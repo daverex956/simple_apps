@@ -10,6 +10,7 @@ pip install pytesseract
 pip install pillow
 pip install ffmpeg-python
 pip install moviepy
+pip install pyfiglet
 
 brew install ffmpeg
 ```
