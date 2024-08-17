@@ -4,7 +4,7 @@ from config import OPENAI_KEY
 
 openai_api_url = "https://api.openai.com/v1/images/generations"
 
-# Function to generate image using OpenAI's API
+
 def generate_image(prompt, folder_path, file_name="generated_image.png"):
     try:
         print(f"Debug: Checking if folder exists or needs creation: {folder_path}")
