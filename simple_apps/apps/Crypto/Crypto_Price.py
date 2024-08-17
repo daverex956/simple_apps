@@ -3,7 +3,6 @@ import time
 import os
 import pyfiglet
 from termcolor import colored
-from datetime import datetime
 
 # Ask the user to enter the cryptocurrency ticker
 CRYPTO_ID = input("Enter the cryptocurrency ticker you want to track (e.g., 'bitcoin', 'ethereum'): ").strip().lower()
@@ -11,7 +10,6 @@ CRYPTO_ID = input("Enter the cryptocurrency ticker you want to track (e.g., 'bit
 bitcoin_price = "Fetching Price..."  # Default message before the initial price is fetched
 previous_price = None  # To store the previous price for comparison
 color = "white"  # Initialize color to white
-LOG_FILE = '/Users/pinax/Desktop/python/simple_apps/debug_log.txt'  # Path for the debug log
 
 
 def fetch_crypto_price(crypto_id):
@@ -51,13 +49,6 @@ def print_ascii_price(price, color):
         print(ascii_text)  # Default to white
 
 
-# Function to write debug logs to file
-def log_debug_info(price, color):
-    with open(LOG_FILE, "a") as log_file:  # Append to the log file
-        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        log_file.write(f"{timestamp} - {CRYPTO_ID.capitalize()} Price: {price}, Color: {color}\n")
-
-
 # Main loop: fetch cryptocurrency price every 5 seconds, then continuously display it as ASCII
 while True:
     # Fetch and update the cryptocurrency price every 5 seconds
@@ -74,9 +65,6 @@ while True:
 
         bitcoin_price = new_price  # Update the in-memory variable
         previous_price = new_price  # Store current price for the next comparison
-
-        # Log the new price and color to the debug log
-        log_debug_info(bitcoin_price, color)
 
     # Continuously print the price stored in memory every 1 second
     for _ in range(5):  # Loop 5 times to print every second within the 5-second fetch cycle
