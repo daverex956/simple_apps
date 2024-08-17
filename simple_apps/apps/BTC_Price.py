@@ -61,12 +61,15 @@ while True:
     # Fetch and update Bitcoin price every 5 seconds
     new_price = fetch_bitcoin_price()
     if new_price:
-        # Determine color based on price change
+        # Only set the color to green or red after the first price update
         if previous_price is not None:
-            color = "green" if new_price > previous_price else "red" if new_price < previous_price else "white"
+            if new_price > previous_price:
+                color = "green"
+            elif new_price < previous_price:
+                color = "red"
         else:
-            color = "white"  # Default to white if no previous price
-        
+            color = "white"  # First time, color will be white
+
         bitcoin_price = new_price  # Update the in-memory variable
         previous_price = new_price  # Store current price for the next comparison
 
