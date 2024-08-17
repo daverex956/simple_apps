@@ -23,5 +23,5 @@ brew install ffmpeg
 
 ### Run
 ```bash
-python3 run.py
+python3 <DIRECTORY/run.py>
 ```
