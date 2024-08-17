@@ -1,6 +1,7 @@
 import os
 import requests
 from config import OPENAI_KEY
+#https://platform.openai.com/settings/organization/billing/overview
 
 openai_api_url = "https://api.openai.com/v1/images/generations"
 
