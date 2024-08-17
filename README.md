@@ -32,8 +32,4 @@ User % python3 run.py
 4. Remove_Metadata
 5. BTC_Price
 6. Exit
-
-Enter the number of the script you want to run: 1
-Running script: /apps/Remove_Metadata.py
-Enter the file location (image or video): 
 ```
