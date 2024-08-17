@@ -9,6 +9,7 @@ pip install pdfplumber
 pip install pytesseract
 pip install pillow
 pip install ffmpeg-python
+pip install moviepy
 ```
 
 ### Run
