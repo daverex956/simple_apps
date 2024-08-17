@@ -1,6 +1,4 @@
-
-<img width="581" alt="Screenshot 2024-08-17 at 12 56 59 PM" src="https://github.com/user-attachments/assets/21e125a2-641c-4c27-a661-8f838a37e185">
-
+<img width="578" alt="Screenshot 2024-08-17 at 12 58 43 PM" src="https://github.com/user-attachments/assets/9d232ba7-440a-48d7-ad3c-dd8f96ac948a">
 
 # simple_apps
 <img width="496" alt="Screenshot 2024-08-17 at 12 46 57 PM" src="https://github.com/user-attachments/assets/b78c1081-2648-4cae-bbe2-d7917d7801eb">
