@@ -1,6 +1,6 @@
 import os
 import requests
-from ....config import OPENAI_KEY
+from config import OPENAI_KEY
 
 openai_api_url = "https://api.openai.com/v1/images/generations"
 
