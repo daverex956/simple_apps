@@ -11,7 +11,8 @@ def list_scripts(directory):
         print("")
         print("--- Choose App --- ")
         for i, script in enumerate(scripts, 1):
-            print(f"{i}. {script}")
+            script_name = script.replace('.py', '')  # Remove the .py extension
+            print(f"{i}. {script_name}")
         print(f"{len(scripts) + 1}. Exit")
         print("")
     return scripts
