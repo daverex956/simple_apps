@@ -12,15 +12,18 @@ def list_scripts(directory):
         print("--- Choose App --- ")
         for i, script in enumerate(scripts, 1):
             print(f"{i}. {script}")
+        print(f"{len(scripts) + 1}. Exit")
         print("")
     return scripts
 
 def choose_script(scripts):
-    # Allow the user to choose a script by number
+    # Allow the user to choose a script by number or exit
     while True:
         try:
-            choice = int(input("Enter the number of the script you want to run: ")) - 1
-            if 0 <= choice < len(scripts):
+            choice = int(input("Enter the number of the script you want to run (or Exit): ")) - 1
+            if choice == len(scripts):  # Option to exit
+                return None
+            elif 0 <= choice < len(scripts):
                 return scripts[choice]
             else:
                 print("Invalid choice. Please try again.")
@@ -42,9 +45,16 @@ def main():
         print("Invalid directory.")
         return
     
-    scripts = list_scripts(directory)
-    if scripts:
+    while True:
+        scripts = list_scripts(directory)
+        if not scripts:
+            return
+
         chosen_script = choose_script(scripts)
+        if chosen_script is None:
+            print("Exiting...")
+            break
+        
         run_script(directory, chosen_script)
 
 if __name__ == "__main__":
