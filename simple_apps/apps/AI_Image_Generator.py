@@ -1,8 +1,7 @@
 import os
 import requests
 from config import OPENAI_KEY
-# Set up your OpenAI API key
-OPENAI_KEY = OPENAI_KEY  # Replace with your OpenAI API key if needed
+
 openai_api_url = "https://api.openai.com/v1/images/generations"
 
 # Function to generate image using OpenAI's API
