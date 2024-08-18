@@ -80,7 +80,6 @@ def monitor_and_backup(src_folder, dest_folder, deleted_folder):
                     shutil.move(dest_file, os.path.join(deleted_dest_path, file))
                     print(f"{file} - File deleted in source, moved to 'deleted files' folder.")
 
-
 if __name__ == "__main__":
     # Ask if the user wants to view the backup_readme.md file
     view_readme = input("Do you want to view the 'backup_readme.md' file? (yes/no): ").strip().lower()
@@ -97,3 +96,4 @@ if __name__ == "__main__":
 
     # Start monitoring and backing up changes
     monitor_and_backup(src_folder, dest_folder, deleted_folder)
+
