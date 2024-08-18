@@ -1,4 +1,5 @@
 # Folder Monitor and Backup Script
+<img width="756" alt="Screenshot 2024-08-18 at 9 53 22 AM" src="https://github.com/user-attachments/assets/d9a0c057-bf8d-43f1-b6b8-69ddc18d930f">
 
 This script monitors a specified folder, backs it up to another location, and keeps the backup up-to-date by copying any new or modified files. Deleted files in the source folder will be moved to a "deleted files" folder in the backup location. The script is easy to use and requires no programming knowledge!
 
