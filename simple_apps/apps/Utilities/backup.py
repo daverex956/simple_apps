@@ -12,7 +12,6 @@ def get_folder_path(prompt):
     return folder_path
 
 def show_backup_readme():
-    # Automatically detect the current script's directory
     script_dir = os.path.dirname(os.path.realpath(__file__))
     readme_file = os.path.join(script_dir, 'backup_readme.md')
     
@@ -64,6 +63,11 @@ def monitor_and_backup(src_folder, dest_folder, deleted_folder):
         # Check for deleted files and move them to the deleted folder
         for root, dirs, files in os.walk(dest_folder):
             relative_path = os.path.relpath(root, dest_folder)
+
+            # Skip processing the 'deleted_files' folder itself
+            if 'deleted_files' in relative_path:
+                continue
+
             src_path = os.path.join(src_folder, relative_path)
 
             for file in files:
