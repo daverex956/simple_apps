@@ -11,6 +11,14 @@ def get_folder_path(prompt):
         return get_folder_path(prompt)
     return folder_path
 
+def show_backup_readme():
+    readme_file = 'backup_readme.md'
+    if os.path.exists(readme_file):
+        with open(readme_file, 'r') as f:
+            print(f.read())
+    else:
+        print("No 'backup_readme.md' found.")
+
 def backup_initial(src_folder, dest_folder):
     print("Backing up files initially...")
     for root, dirs, files in os.walk(src_folder):
@@ -66,6 +74,11 @@ def monitor_and_backup(src_folder, dest_folder, deleted_folder):
                     print(f"{file} - File deleted in source, moved to 'deleted files' folder.")
 
 if __name__ == "__main__":
+    # Ask if the user wants to view the backup_readme.md file
+    view_readme = input("Do you want to view the 'backup_readme.md' file? (yes/no): ").strip().lower()
+    if view_readme == 'yes':
+        show_backup_readme()
+
     # Get user input for folder locations
     src_folder = get_folder_path("Enter the folder to monitor: ")
     dest_folder = get_folder_path("Enter the backup folder location: ")
