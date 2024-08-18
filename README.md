@@ -5,7 +5,6 @@
 1. [Setting Up Python](#setting-up-python)
 2. [Installing the Necessary Tools](#installing-the-necessary-tools)
 3. [Running the Main Script](#running-the-main-script)
-4. [Choosing an App to Run](#choosing-an-app-to-run)
 
 ---
 
