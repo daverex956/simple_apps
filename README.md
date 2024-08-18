@@ -9,8 +9,6 @@ Welcome to the **Simple Apps Project**! This repository contains a variety of sm
 3. [Installing the Necessary Tools](#installing-the-necessary-tools)
 4. [Running the Main Script](#running-the-main-script)
 5. [Choosing an App to Run](#choosing-an-app-to-run)
-6. [Fixing Common Issues](#fixing-common-issues)
-7. [Where to Get More Help](#where-to-get-more-help)
 
 ---
 
