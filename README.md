@@ -1,22 +1,14 @@
-# Simple Apps Project
-
-Welcome to the **Simple Apps Project**! This repository contains a variety of small Python applications organized by categories. If you're completely new to programming, don't worry! This guide will help you step-by-step to get everything working.
+# Simple Apps
 
 ## Table of Contents
 
-1. [Getting Started](#getting-started)
-2. [Setting Up Python](#setting-up-python)
-3. [Installing the Necessary Tools](#installing-the-necessary-tools)
-4. [Running the Main Script](#running-the-main-script)
-5. [Choosing an App to Run](#choosing-an-app-to-run)
+1. [Setting Up Python](#setting-up-python)
+2. [Installing the Necessary Tools](#installing-the-necessary-tools)
+3. [Running the Main Script](#running-the-main-script)
+4. [Choosing an App to Run](#choosing-an-app-to-run)
 
 ---
 
-## Getting Started
-
-Before you can run any of the apps, you need to make sure your computer is ready. Below, you'll find instructions for setting up everything, even if this is your first time programming.
-
----
 
 ## Setting Up Python
 
