@@ -1,3 +1,5 @@
+<img width="578" alt="Screenshot 2024-08-17 at 12 58 43 PM" src="https://github.com/user-attachments/assets/9d232ba7-440a-48d7-ad3c-dd8f96ac948a">
+
 # Simple Apps
 
 ## Table of Contents
