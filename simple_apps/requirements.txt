@@ -1,0 +1,10 @@
+gTTS
+tqdm
+pdfplumber
+pytesseract
+pillow
+ffmpeg-python
+moviepy
+pyfiglet
+termcolor
+openai
