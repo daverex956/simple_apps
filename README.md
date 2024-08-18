@@ -13,7 +13,7 @@
 
 3. **Install Libraries:**
    - Open **Terminal** or **Command Prompt**.
-   - Use `cd /path/to/your/project/folder` to navigate to the project directory.
+   - Use `cd /path/simple_apps` to navigate to the project directory.
    - Run: `pip install -r requirements.txt` to install required libraries.
 
 4. **Install ffmpeg:**
