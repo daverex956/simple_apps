@@ -1,93 +1,25 @@
 <img width="578" alt="Screenshot 2024-08-17 at 12 58 43 PM" src="https://github.com/user-attachments/assets/9d232ba7-440a-48d7-ad3c-dd8f96ac948a">
 
-# Simple Apps
+# Simple Setup Guide
 
-## Table of Contents
+## Steps
 
-1. [Setting Up Python](#setting-up-python)
-2. [Installing the Necessary Tools](#installing-the-necessary-tools)
-3. [Running the Main Script](#running-the-main-script)
+1. **Check Python Installation:**
+   - Open **Terminal** (Mac/Linux) or **Command Prompt** (Windows).
+   - Type: `python --version`. If Python 3.x.x shows, you're set. If not, install Python from the official website, ensuring you select "Add Python to PATH."
 
----
+2. **Download Project:**
+   - Download the project via **Download ZIP** or use **Git** to clone the repository.
 
+3. **Install Libraries:**
+   - Open **Terminal** or **Command Prompt**.
+   - Use `cd /path/to/your/project/folder` to navigate to the project directory.
+   - Run: `pip install -r requirements.txt` to install required libraries.
 
-## Setting Up Python
+4. **Install ffmpeg:**
+   - **Mac/Linux**: Run `brew install ffmpeg`.
+   - **Windows**: Search for "install ffmpeg on Windows" and follow a guide.
 
-### What is Python?
-
-Python is a programming language that will allow your computer to run the apps in this project. First, you need to make sure Python is installed on your computer.
-
-### Step 1: Check if Python is already installed
-
-- Open your **Terminal** (Mac/Linux) or **Command Prompt** (Windows).
-- Type the following command and press Enter:
-
-    ```bash
-    python --version
-    ```
-
-- If you see something like `Python 3.x.x`, you’re good to go. If not, follow the next step to install it.
-
-### Step 2: Install Python
-
-If Python isn't installed, you need to download and install it. Just search for "Python download" online, and download the latest version for your operating system. Follow the instructions to install it, and make sure to check the box that says "Add Python to PATH" during the installation.
-
-Once it's installed, repeat Step 1 to check that Python is now recognized.
-
----
-
-## Installing the Necessary Tools
-
-### Step 1: Download the Project
-
-You can download the entire project in two ways:
-
-1. Click the **Download ZIP** button on the project page and extract the files to a folder.
-2. If you're familiar with Git, you can clone the project to your computer.
-
-### Step 2: Install the Required Libraries
-
-The apps in this project use some extra tools (called "libraries") to work. Installing these tools is easy.
-
-1. Open your **Terminal** (Mac/Linux) or **Command Prompt** (Windows).
-2. Navigate to the folder where you saved the project using the `cd` command. For example:
-
-    ```bash
-    cd /path/to/your/project/folder
-    ```
-
-3. Now, install the required tools by running this command:
-
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-   This will install everything the apps need to run.
-
-### Step 3: Install ffmpeg (for media-related apps)
-
-Some apps require **ffmpeg** for processing audio and video files. To install it:
-
-- **Mac/Linux users**: Open your terminal and run:
-
-    ```bash
-    brew install ffmpeg
-    ```
-
-- **Windows users**: You can find a simple guide to install `ffmpeg` online by searching "install ffmpeg on Windows."
-
----
-
-## Running the Main Script
-
-### Step 1: Open the Terminal or Command Prompt
-
-- **Windows**: Press `Win + R`, type `cmd`, and hit Enter.
-- **Mac/Linux**: Open the Terminal app from your Applications folder.
-
-### Step 2: Navigate to the Project Folder
-
-Use the `cd` command to go to the folder where you saved the project. For example:
-
-```bash
-cd /path/to/your/project/folder
+5. **Run the Script:**
+   - Open **Terminal** or **Command Prompt**.
+   - Use `cd /path/to/your/project/folder` to go to the project directory.
