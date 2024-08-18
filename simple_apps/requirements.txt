@@ -8,3 +8,4 @@ moviepy
 pyfiglet
 termcolor
 openai
+pyfiglet
