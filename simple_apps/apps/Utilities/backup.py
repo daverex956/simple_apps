@@ -13,11 +13,18 @@ def get_folder_path(prompt):
 
 def show_backup_readme():
     readme_file = 'backup_readme.md'
+    if not os.path.exists(readme_file):
+        print("No 'backup_readme.md' found in the current directory.")
+        custom_path = input("Would you like to specify the path to 'backup_readme.md'? (yes/no): ").strip().lower()
+        if custom_path == 'yes':
+            readme_file = get_folder_path("Please provide the full path to 'backup_readme.md': ")
+        else:
+            return
     if os.path.exists(readme_file):
         with open(readme_file, 'r') as f:
             print(f.read())
     else:
-        print("No 'backup_readme.md' found.")
+        print("The specified 'backup_readme.md' was not found.")
 
 def backup_initial(src_folder, dest_folder):
     print("Backing up files initially...")
