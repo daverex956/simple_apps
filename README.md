@@ -23,3 +23,4 @@
 5. **Run the Script:**
    - Open **Terminal** or **Command Prompt**.
    - Use `cd /path/to/your/project/folder` to go to the project directory.
+   
